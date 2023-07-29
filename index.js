@@ -80,7 +80,7 @@ app.post("/usdtTransfers/sync", async (req, res) => {
     const toBlockNumber = parseInt(req.query.toBlock);
 
     if (isNaN(fromBlockNumber) || isNaN(toBlockNumber)) {
-      return res.status(400).json({ error: "Invalid block numbers" });
+      return res.status(400).json({ error: "Invalid block number" });
     }
 
     const eventsData = await parseUSDTTransfers(fromBlockNumber, toBlockNumber);
