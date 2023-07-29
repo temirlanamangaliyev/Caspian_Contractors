@@ -9,7 +9,7 @@ Test task for Caspian_Contractors
 
 # End points:
 for filling data intto DB: 
- http://localhost:3001/usdtTransfers/sync?fromBlock=17612968&toBlock=17612970 
+GET http://localhost:3001/usdtTransfers/sync?fromBlock=17612968&toBlock=17612970 
 for fetching data from API with pagination:
-http://localhost:3001/usdtTransfers?page=1&perPage=25
+POST http://localhost:3001/usdtTransfers?page=1&perPage=25
 
